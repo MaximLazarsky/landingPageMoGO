@@ -1,0 +1,110 @@
+#numbers {
+    width: 100%;
+    background: #95e1d3;
+    height: 269px;
+    display: flex;
+    justify-content: center;
+}
+
+.numbers-flex {
+    width: 100%;
+    height: 269px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.number-section {
+    width: 240px;
+    color: #ffffff;
+    box-sizing: border-box;
+    border-right: 1px solid #ffffff;
+    height: 100%;
+}
+
+.number-section:first-child {
+    border-left: 1px solid #ffffff;
+}
+
+.number {
+    margin-top: 35%;
+    font-size: 72px;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.number-section p {
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+    #numbers {
+        height: 169px;
+    }
+
+    .number {
+        font-size: 50px;
+        margin-top: 45%;
+    }
+
+    .number-section p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+    #numbers {
+        width: 100%;
+        height: 509px;
+    }
+
+    .numbers-flex {
+        display: block;
+        height: 100%;
+        margin-top: -41px;
+    }
+
+    .number {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    .number-section p {
+        font-size: 8px;
+        margin-top: 5px;
+    }
+
+    .number-section {
+        width: 100px;
+        color: #ffffff;
+        box-sizing: border-box;
+        border-right: none;
+        height: 50px;
+        margin-left: 95px;
+        position: relative;
+    }
+
+    .number-section:first-child {
+        border-left: none;
+    }
+
+    .number-section::after {
+        content: "";
+        width: 320px;
+        height: 1px;
+        background: #ffffff;
+        position: absolute;
+        left: -103px;
+        bottom: -43px;
+    }
+
+    .number-section:last-child::after {
+        display: none;
+    }
+}

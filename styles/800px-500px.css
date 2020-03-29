@@ -1,0 +1,187 @@
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    /* general styles */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 480px;
+    }
+
+    /* styles for header */
+
+    .navigation {
+        display: block;
+        width: 100%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu {
+        width: 475px;
+        margin-top: 20px;
+    }
+
+    .header-text{
+    font-size: 50px;    
+    }
+
+    .header-title {
+        font-size: 75px;
+        width: 100%;
+    }
+
+    /*general styles for main*/
+
+    .text-description-title-sections {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    /* styles for section about us */
+    .items-about-us {
+        width: 100%;
+        margin-top: 103px;
+    }
+
+    .item-about {
+        height: 150px;
+    }
+
+    .items-about-us img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .item-about-hover {
+        width: 150px;
+        height: 150px;
+    }
+
+    .item-about-hover div img{
+        width: 30px;
+        height: 20px;
+    }
+
+    /* styles for section work-with*/
+
+    .work-with-services::after {
+        content: "";
+        position: absolute;
+        background: #e5e5e5;
+        height: 2px;
+        width: 100%;
+        top: 365px;
+    }
+
+    .work-with-services-items {
+        margin-left: 10px;
+        width: 230px;
+    }
+
+    .work-with-content-services-items {
+        margin-left: 10px;
+    }
+
+    .work-with-content-services-items p {
+        font-size: 12px;
+    }
+
+    /* styles for design section*/
+
+    .design-bg-color {
+        height: 697px;
+    }
+
+    .ipad-img {
+        margin-left: 15%;
+    }
+
+    .ipad-img img {
+        height: 400px;
+    }
+
+    .iphone-img {
+        right: 50px;
+    }
+
+    .iphone-img img {
+        height: 300px;
+    }
+
+    /* styles for section services*/
+    .img-services-items img {
+        width: 240px;
+        height: 270px;
+    }
+
+    /* styles for footer */
+
+    .footer {
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer-content::before {
+        top: 235px;
+    }
+
+    .footer-content-text {
+        font-size: 15px;
+    }
+
+    .footer-content-followers {
+        font-size: 15px;
+    }
+
+    .footer-content-followers span {
+        font-size: 18px;
+    }
+
+    .follow-us {
+        font-size: 15px;
+        margin-right: 23px;
+    }
+
+    .footer-content-icons-img {
+        margin-right: 18px;
+    }
+
+    .form-email input {
+        width: 300px;
+    }
+
+    .form-email button {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .footer-blogs {
+        margin-top: 30px;
+    }
+    
+    .footer-blogs-items-content {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .footer-blogs-items-content-text {
+        font-size: 15px;
+    }
+
+    .footer-instagram-photos {
+        width: 450px;
+    }
+
+    .footer-instagram-photos div:last-child {
+        display: none;
+    }
+}

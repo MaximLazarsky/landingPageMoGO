@@ -1,0 +1,110 @@
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    /* general stylws */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 950px;
+    }
+
+    /* styles for section about us */
+    .items-about-us {
+        width: 100%;
+        margin-top: 103px;
+    }
+
+    .item-about {
+        height: 210px;
+    }
+
+    .items-about-us img{
+        width: 320px;
+    }
+
+    .item-about-hover {
+        width: 320px;
+        height: 210px;
+    }
+
+    .item-about-hover div img{
+        width: 30px;
+        height: 20px;
+    }
+
+    /* styles for section work-with*/
+
+    .work-with-services::after {
+        content: "";
+        position: absolute;
+        background: #e5e5e5;
+        height: 2px;
+        width: 100%;
+        top: 365px;
+    }
+
+    .work-with-services-items {
+        margin-left: 120px;
+    }
+
+    /* styles for design section*/
+
+    .iphone-img {
+        position: absolute;
+        top: 494px;
+        right: 110px;
+    }
+
+    /* styles for section services*/
+    .img-services-items img {
+        width: 536px;
+        height: 378px;
+    }
+
+    /* styles for footer */
+
+    .footer-content {
+        width: 350px;
+    }
+
+    .footer-content::before {
+        top: 235px;
+    }
+
+    .footer-content-text {
+        font-size: 12px;
+    }
+
+    .footer-content-followers {
+        font-size: 12px;
+    }
+
+    .footer-content-followers span {
+        font-size: 13px;
+    }
+
+    .follow-us {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .footer-content-icons-img {
+        margin-right: 12px;
+    }
+
+    .form-email button {
+        width: 80px;
+        font-size: 11px;
+    }
+
+    .footer-blogs-items-content {
+        width: 150px;
+        margin-left: 15px;
+    }
+
+    .footer-blogs-items-content-text {
+        font-size: 10px;
+    }
+}

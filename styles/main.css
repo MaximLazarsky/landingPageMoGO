@@ -1,0 +1,501 @@
+/* general styles */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1200px;
+}
+
+/* styles for header */
+
+header {
+    background: url("../img/bg_eagle.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.grad-header {
+    background: linear-gradient(rgba(244,139,130,0.9), rgba(252,227,138,0.9));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 230px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.menu {
+    list-style: none;
+    width: 618px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu li:hover {
+    color: #fce38a;
+    border-bottom: 1.5px solid #fce38a;
+    padding-bottom: 11px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-top: 145px;
+}
+
+.header-title {
+    font-size: 150px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 835px;
+    margin-top: 50px;
+    line-height: 90%;
+    position: relative;
+}
+
+.header-title::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    bottom: -75px;
+    left: 47%;
+}
+
+.button-learnMore {
+    height: 34px;
+    width: 158px;
+    background: none;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 126px;
+}
+
+.button-learnMore:hover {
+   background: #e88182;
+}
+
+/*general styles for main*/
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titles-of-sections {
+ color: #333333;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.titles-of-sections p {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.titles-of-sections h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    position: relative;
+}
+
+.titles-of-sections h3::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    bottom: -40px;
+    left: 45%;
+}
+
+.text-description-title-sections {
+    margin-top: 90px;
+    text-align: center;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 940px;
+}
+
+/* styles for section about us */
+
+.about-us {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items-about-us {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 103px;
+}
+
+.item-about {
+    position: relative;
+    cursor: pointer;
+    background: #95e1d3;
+    height: 250px;
+}
+
+.item-about-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(244,139,130,0.9), rgba(252,227,138,0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+.item-about-hover:hover {
+    opacity: 1;
+    transform: translate(-15px, -15px);
+}
+
+/* .item-about:hover .item-about-img {
+    transform: translate(-15px, -15px);
+} */
+
+/*DOIT hover for item-about*/
+
+#numbers {
+    margin-top: 110px;
+}
+
+/* all style for section with numbers in "styles/numbers.css" */
+
+/* styles for section work-with*/
+
+.work-with {
+    margin-top: 110px;
+}
+
+.work-with-services {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 10px;
+}
+
+.work-with-services::before {
+    content: "";
+    position: absolute;
+    background: #e5e5e5;
+    height: 2px;
+    width: 100%;
+    top: 200px;
+}
+
+.work-with-services-items {
+    margin-top: 100px;
+    width: 340px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.work-with-services-items img {
+    width: 35px;
+    height: 35px;
+}
+
+.work-with-content-services-items {
+    margin-left: 30px;
+}
+
+.work-with-content-services-items h4 {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.work-with-content-services-items p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #a0a0a0;
+}
+
+/* styles for design section*/
+
+.design {
+    margin-top: 120px;
+    background: url("../img/bg_lake.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.design-bg-color {
+    width: 100%;
+    background: rgba(217, 217, 217, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    height: 879px;
+}
+
+.ipad-img {
+    margin-top: 105px;
+    margin-left: 31%;
+    margin-bottom: 0;
+}
+
+.iphone-img {
+    position: absolute;
+    top: 494px;
+    right: 267px;
+}
+
+/* styles for section services*/
+
+.services {
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 95px;
+}
+
+.img-services-items img {
+    width: 566px;
+    height: 378px;
+}
+
+/* styles for section accordion in "styles/accordion.css */
+
+/* styles for section slider in "styles/slider.css */
+
+/* styles for footer */
+
+footer {
+    margin-top: 182px;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+}
+
+.footer-content {
+    width: 480px;
+    position: relative;
+}
+
+.footer-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    top: 253px;
+}
+
+.footer-content-logo {
+    font-size: 46px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.footer-content-text {
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 15px;
+    margin-top: 38px;
+}
+
+.footer-content-followers {
+    font-size: 15px;
+    margin-top: 48px;
+    color: #333333;
+}
+
+.footer-content-followers span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-content-icons {
+    display: flex;
+    margin-top: 33px;
+}
+
+.follow-us {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 23px;
+    text-transform: capitalize;
+    color: #cccccc;
+}
+
+.footer-content-icons-img {
+    margin-right: 18px;
+}
+
+.form-email {
+    margin-top: 38px;
+}
+
+.form-email input {
+    margin-right: 0;
+    height: 38px;
+    width: 230px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #333333;
+    box-sizing: border-box;
+    padding-left: 12px;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+
+.form-email .wrong-email {
+    border: 1px solid #f38181;
+    color: #f38181;
+    font-size: 18px;
+}
+
+.form-email button {
+    margin-left: 0;
+    background: #95e1d3;
+    color: #ffffff;
+    border: none;
+    height: 38px;
+    width: 150px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+}
+
+.form-email button:hover {
+    background: #f38181;
+}
+
+.footer-titles {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.footer-blogs-items {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-blogs-items-content {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.footer-blogs-items-content-text {
+    font-size: 12px;
+    margin-top: 18px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.footer-blogs-items-content-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #cccccc;
+    margin-top: 13px;
+}
+
+.footer-instagram-photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 275px;
+    box-sizing: border-box;
+}
+
+.footer-instagram-photos div {
+    margin-right: 3px;
+    margin-bottom: 0;
+}
+
+.footer-instagram-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #cccccc;
+    margin-top: 17px;
+    cursor: pointer;
+}
